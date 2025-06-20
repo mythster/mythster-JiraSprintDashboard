@@ -1,0 +1,69 @@
+<!-- 
+    File: index.html
+    Project: Jira Sprint Tracker
+    Description: This is the main HTML file for the Jira Sprint Dashboard application. 
+                 It includes the structure for the dashboard, controls, and chart display.
+    Author: mythster (Ashir Gowardhan)
+    Date Created: 2025-05-19
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Sprint Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <header class="header">
+        <h1>Jira Sprint Dashboard</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="controls">
+            <div class="filter-group">
+                <label for="viewSelector">Select View:</label>
+                <select id="viewSelector">
+                    <option value="sprint">Sprint View</option>
+                    <option value="ev_pv">EV/PV</option>
+                </select>
+            </div>
+            <div id="sprintControls" class="filter-group">
+                <div class="filter-group">
+                    <label for="sprintFilter">Select Sprint:</label>
+                    <select id="sprintFilter"></select>
+                </div>
+                <div class="filter-group">
+                    <label for="userFilter">Filter by User:</label>
+                    <select id="userFilter"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="burnupChart"></canvas>
+        </div>
+    </main>
+    <footer class="footer">
+        Authored by mythster
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
