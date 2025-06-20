@@ -24,8 +24,8 @@ This project was created by **mythster** a.k.a Ashir Gowardhan
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/mythster/JiraSprintTracker.git
-    cd your-repo-name
+    git clone https://github.com/mythster/mythster-JiraSprintTracker.git
+    cd mythster-JiraSprintTracker
     ```
 
 2.  **Install Dependencies:**
